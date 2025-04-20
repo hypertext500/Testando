@@ -1,5 +1,5 @@
 local Modules = loadstring(game:HttpGet("https://raw.githubusercontent.com/hypertext500/Testando/refs/heads/main/Modules/Module.luau"))()
-local whiteList = {"Laelmano24"}
+local whiteList = loadstring(game:HttpGet("https://raw.githubusercontent.com/hypertext500/Testando/refs/heads/main/white-list.lua"))()
 local TeleportService = game:GetService("TeleportService")
 local Players = game:GetService("Players")
 local LocalPlayer = Players.LocalPlayer
@@ -64,24 +64,30 @@ local function funcionaliade(message, player)
     end
 end
 
-if not getgenv().RTX321 then
+function start_script()
 
-    warn("To executado")
+    if table.find(whiteList, LocalPlayer.Name) then warn("ADM detecado") return end
 
-    getgenv().RTX321 = true
-    for _,  player in ipairs(Players:GetPlayers()) do
-
-        player.Chatted:Connect(function(message)
-            funcionaliade(message, player)
+    if not getgenv().RTX321 then
+    
+        getgenv().RTX321 = true
+        for _,  player in ipairs(Players:GetPlayers()) do
+    
+            player.Chatted:Connect(function(message)
+                funcionaliade(message, player)
+            end)
+    
+        end
+    
+        Players.PlayerAdded:Connect(function(player)
+            
+            player.Chatted:Connect(function(message)
+                funcionaliade(message, player)
+            end)
+    
         end)
-
     end
 
-    Players.PlayerAdded:Connect(function(player)
-        
-        player.Chatted:Connect(function(message)
-            funcionaliade(message, player)
-        end)
-
-    end)
 end
+
+start_script()

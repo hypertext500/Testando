@@ -21,7 +21,7 @@ end)
 LocalPlayer.OnTeleport:Connect(function(State)
     if not TeleportCheck and queueteleport then
         TeleportCheck = true
-        queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/hypertext500/Testando/refs/heads/main/main.luau'))()")
+        queueteleport('task.wait(5) loadstring(readfile("123.txt"))()')
     end
 end)
 
@@ -76,7 +76,6 @@ function start_script()
 
     if not getgenv().RTX321 then
         getgenv().RTX321 = true
-        warn("Executado")
         for _,  player in ipairs(Players:GetPlayers()) do
     
             player.Chatted:Connect(function(message)

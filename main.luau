@@ -21,7 +21,7 @@ end)
 LocalPlayer.OnTeleport:Connect(function(State)
     if not TeleportCheck and queueteleport then
         TeleportCheck = true
-        queueteleport('task.wait(5) loadstring(readfile("123.txt"))()')
+        queueteleport('task.wait(5) loadstring(game:HttpGet("https://raw.githubusercontent.com/hypertext500/Testando/refs/heads/main/main.luau"))()')
     end
 end)
 

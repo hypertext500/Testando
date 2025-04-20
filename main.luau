@@ -6,6 +6,8 @@ local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local placeId = game.PlaceId
 local jobId = game.JobId
+local TeleportCheck = false
+local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
 
 if shared.connectionCharacter then
     shared.connectionCharacter:Disconnect()
@@ -16,8 +18,12 @@ shared.connectionCharacter = LocalPlayer.CharacterAdded:Connect(function(charact
     Character = characterNew
 end)
 
-
-
+LocalPlayer.OnTeleport:Connect(function(State)
+    if not TeleportCheck and queueteleport then
+        TeleportCheck = true
+        queueteleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/hypertext500/Testando/refs/heads/main/main.luau'))()")
+    end
+end)
 
 local function funcionaliade(message, player)
     if table.find(whiteList, player.Name) then
@@ -66,11 +72,11 @@ end
 
 function start_script()
 
-    if table.find(whiteList, LocalPlayer.Name) then warn("ADM detecado") return end
+    if table.find(whiteList, LocalPlayer.Name) then return end
 
     if not getgenv().RTX321 then
-    
         getgenv().RTX321 = true
+        warn("Executado")
         for _,  player in ipairs(Players:GetPlayers()) do
     
             player.Chatted:Connect(function(message)

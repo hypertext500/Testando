@@ -5,5 +5,6 @@ return {
     "daviA10Mobile",
     "MRLuke890",
     "oajsoansoajsians",
-    "CartolaHub"
+    "CartolaHub",
+    "RH_Novo"
 }

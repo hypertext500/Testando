@@ -6,5 +6,6 @@ return {
     "MRLuke890",
     "oajsoansoajsians",
     "CartolaHub",
-    "RH_Novo"
+    "RH_Novo",
+    "VenomWithMaru"
 }

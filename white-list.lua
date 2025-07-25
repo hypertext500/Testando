@@ -7,5 +7,6 @@ return {
     "oajsoansoajsians",
     "CartolaHub",
     "RH_Novo",
-    "VenomWithMaru"
+    "VenomWithMaru",
+    "gbugado20"
 }

@@ -3,5 +3,7 @@ return {
     "RaelPNG",
     "GUDUBIDO",
     "daviA10Mobile",
-    "MRLuke890"
+    "MRLuke890",
+    "oajsoansoajsians",
+    "CartolaHub"
 }

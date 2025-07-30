@@ -10,5 +10,6 @@ return {
     "VenomWithMaru",
     "gbugado20",
     "soulf193",
-    "rtieiueuys99999"
+    "rtieiueuys99999",
+    "nao_souERIVALDO"
 }

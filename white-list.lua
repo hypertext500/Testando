@@ -12,5 +12,6 @@ return {
     "soulf193",
     "rtieiueuys99999",
     "nao_souERIVALDO",
-    "BSX_GOULTS"
+    "BSX_GOULTS",
+    "BSX_ADMIRI"
 }

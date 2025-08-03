@@ -16,5 +16,6 @@ return {
     "BSX_ADMIRI",
     "Lusquinha_067",
     "HEROBRIN3234",
-    "RaelVNG"
+    "RaelVNG",
+    "testeraelhub2"
 }

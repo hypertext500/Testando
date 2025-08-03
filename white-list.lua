@@ -14,5 +14,6 @@ return {
     "nao_souERIVALDO",
     "BSX_GOULTS",
     "BSX_ADMIRI",
-    "Lusquinha_067"
+    "Lusquinha_067",
+    "HEROBRIN3234"
 }

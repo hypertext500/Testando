@@ -17,5 +17,6 @@ return {
     "Lusquinha_067",
     "HEROBRIN3234",
     "RaelVNG",
-    "testeraelhub2"
+    "testeraelhub2",
+    "Lolyta6662"
 }

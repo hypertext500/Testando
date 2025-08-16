@@ -18,5 +18,6 @@ return {
     "HEROBRIN3234",
     "RaelVNG",
     "testeraelhub2",
-    "Lolyta6662"
+    "Lolyta6662",
+    "RaelAdminScripter"
 }
